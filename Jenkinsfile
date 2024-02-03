@@ -8,15 +8,3 @@ pipeline {
         }
     }
 }
-
-pipeline {
-    agent any
-    stages {
-        stage ('Wish') {
-            steps{
-                echo "Hi"
-            }
-        
-        }
-    }
-}
