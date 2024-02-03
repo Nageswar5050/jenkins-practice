@@ -7,11 +7,6 @@ pipeline {
             }
         }
     }
-    post {
-        always {
-            echo 'I will always say Hello again!'
-        }
-    }
 }
 
 pipeline {
@@ -22,11 +17,6 @@ pipeline {
                 echo "Hi"
             }
         
-        }
-    }
-    post {
-        always {
-            echo "I also will always run"
         }
     }
 }
