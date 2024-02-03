@@ -1,6 +1,6 @@
 pipeline {
-    agent any {
-        stages {
+    agent any 
+    stages {
             stage ('Example') {
                 steps {
                     echo "Hello Nageswar"
@@ -8,4 +8,3 @@ pipeline {
             }
         }
     }
-}
