@@ -2,7 +2,7 @@ pipeline {
     agent any
     options {
         timeout(time:1, unit:'SECONDS')
-        disableConcurrentbuilds()
+        disableConcurrentBuilds()
     }
     environment {
         MY_NAME = 'JAIBALAYYA'
