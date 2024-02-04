@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        MY_NAME = JAIBALAYYA
+        MY_NAME = 'JAIBALAYYA'
     }
     stages {
         stage ('Build') {
@@ -21,11 +21,11 @@ pipeline {
                 echo "this is from deploying phase"
             }
         }
+    }
 
-        post {
-            always {
-                echo "I will always run"
-            }
+    post {
+        always {
+            echo "I will always run"
         }
     }
 }
