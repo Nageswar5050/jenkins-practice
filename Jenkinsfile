@@ -13,6 +13,9 @@ pipeline {
         stage ('Test') {
             steps {
                 echo "this is from testing phase"
+                sh """
+                env
+                """
             }
         }
 
