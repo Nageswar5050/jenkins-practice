@@ -1,5 +1,9 @@
 pipeline {
     agent any
+    options {
+        timeout(time:1, unit:'SECONDS')
+        disableConcurrentbuilds()
+    }
     environment {
         MY_NAME = 'JAIBALAYYA'
     }
