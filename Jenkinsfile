@@ -1,38 +1,20 @@
 pipeline {
     agent any
-    options {
-        timeout(time:1, unit:'SECONDS')
-        disableConcurrentBuilds()
-    }
-    environment {
-        MY_NAME = 'JAIBALAYYA'
-    }
     stages {
-        stage ('Build') {
+        stage ("Build") {
             steps {
-                echo "I am Nageswar, and this is from building phase"
+                echo "This is Building stage"
             }
         }
-
-        stage ('Test') {
+        stage ("Test") {
             steps {
-                echo "this is from testing phase"
-                sh """
-                env
-                """
+                echo "This is testing stage"
             }
         }
-
-        stage ('Deploy') {
+        stage ("Deploy") {
             steps {
-                echo "this is from deploying phase"
+                echo "This is deploy stage"
             }
-        }
-    }
-
-    post {
-        always {
-            echo "I will always run"
         }
     }
 }
