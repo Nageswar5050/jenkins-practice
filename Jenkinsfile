@@ -33,4 +33,5 @@ pipeline {
         success {
             echo "I will only run if pipeline success"
         }
+    }
 }
