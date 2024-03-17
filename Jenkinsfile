@@ -27,7 +27,7 @@ pipeline {
         always {
             echo "I will always run"
         }
-        failed {
+        failure {
             echo "I will only run if pipeline fails"
         }
         success {
