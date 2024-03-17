@@ -22,15 +22,4 @@ pipeline {
             }
         }
     }
-
-    post {
-        always {
-            echo "I will always run"
-        }
-        failed {
-            echo "I will only run if pipeline fails"
-        }
-        success {
-            echo "I will only run if pipeline success"
-        }
 }
