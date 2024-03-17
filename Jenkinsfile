@@ -3,6 +3,7 @@ pipeline {
         node {
             label "agent_1"
         }
+    }
     
     stages {
         stage ("Build") {
@@ -20,6 +21,5 @@ pipeline {
                 echo "Deploying"
             }
         }
-    }
     }
 }
